@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' href='graveRobberIndexStyle.css'>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <title>Grave Robber 0.1</title>
+    </head>
+    <body>
+        <div id="itemContainer">
+            <p id="titleText">GRAVE DIGGER 0.1</p>
+            <img draggable="false"  id="pageLogo" src="./img/shovel.png">
+            <div id="innerItemContainer">
+                <div id="upperSliderBox">
+                    <div class="sliderBox">
+                        <p class="sliderText">rows: 18</p>
+                        <input autocomplete="off" type="range" min="4" max="50" value="18" id="rowSlider" class="setSlider">
+                    </div>
+                    <div class="sliderBox">
+                        <p class="sliderText">columns: 18</p>
+                        <input autocomplete="off" type="range" min="4" max="50" value="18" id="columnSlider" class="setSlider">
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                <button class="menuButton" onclick="buttonClicked()">Begin Game</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="graveRobberIndexScript.js"></script>
+    </body>
+</html>

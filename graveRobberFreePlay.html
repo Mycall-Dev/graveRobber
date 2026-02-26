@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' href='graveRobberFreePlayStyle.css'>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <title>Grave Robber 0.1 Freeplay</title>
+    </head>
+    <body>
+        <div id="itemContainer">
+            <div id="statsContainer">
+                <div id="statsScreen">
+                    <div class="statsText" id="bombCount">Bombs Left: 75</div>
+                    <div class="statsText" id="title">Grave Digger 20x20</div>
+                    <div class="statsText" id="timer">Time: 00:00:00</div>
+                </div>
+                <div id="statsScreenButtons">
+                    <div class="statButtonDivs">
+                        <button onclick="statButtonClicked({button: 0})" class="statButton" id="flagButton"><img draggable="false" class="buttonImg" src="./img/flag.png"></button>
+                    </div>
+                    <div class="statButtonDivs">
+                        <button onclick="statButtonClicked({button: 1})" class="statButton" id="clearTileButton"><img draggable="false" class="buttonImg" src="./img/shovel.png"></button>
+                    </div>
+                    <div class="statButtonDivs">
+                        <button onclick="zoomChange({button: 1})"  class="statButton">-</button>
+                    </div>
+                    <div class="statButtonDivs">
+                        <button onclick="zoomChange({button: 0})" class="statButton">+</button>
+                    </div>       
+                </div>   
+            </div>
+            <div id="mineGridContainer" class="notAffected">
+                <table id="mineGrid">
+                </table>
+                <div id="divMineGrid">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="graveRobberFreePlayScript.js"></script>
+    </body>
+</html>

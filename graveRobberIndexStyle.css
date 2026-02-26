@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Micro+5&display=swap');
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/browntilepixelpatternUpscaled.png);
+    background-size: 10vh;
+    background-repeat: repeat;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    color: white;
+    user-select: none;
+}
+
+#pageLogo{
+    width: 10vh;
+}
+
+.menuButton{
+    width: 40vh;
+    height: 7vh;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-size: 7vh;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5vh solid rgb(91, 87, 87);
+}
+
+.buttonContainer{
+    border: 0.5vh solid gray;
+}
+
+#itemContainer{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+#innerItemContainer{
+    margin-top: 8vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.sliderText{
+    text-align: center;
+    font-size: 5vh;
+    margin:0;
+}
+
+#titleText{
+    font-size: 10vh;
+    margin-bottom: 0;
+}
+
+#upperSliderBox
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.sliderBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+.setSlider
+{
+    width: 35vh;
+    height: 4vh;
+    background: #a8a7a7;
+    outline: none;
+}
+
+.setSlider::-moz-range-thumb
+{
+    
+    outline: none;
+    border: 0vh;
+    width: 3.5vh;
+    height: 3.5vh; 
+    border-radius: 0;
+    cursor: pointer; 
+    border: 0.3vh solid #a8a7a7;
+}
+
+.setSlider::-webkit-slider-thumb
+{
+    outline: none;
+    border: 0vh;
+    width: 3.5vh;
+    height: 3.5; 
+    border-radius: 0; 
+    cursor: pointer; 
+    border: 0.3vh solid #a8a7a7;            
+}
