@@ -14,3 +14,15 @@ function updateGridLayout(){
     document.getElementsByClassName("sliderText")[0].innerHTML = "rows: " + rowCount;
     document.getElementsByClassName("sliderText")[1].innerHTML = "columns: " + columnCount;
 }
+
+function startGame(){
+    localStorage.setItem("rowCount", rowCount);
+    localStorage.setItem("columnCount", columnCount);
+    console.log("started");
+}
+
+document.getElementsByClassName("menuButton")[0].addEventListener("click" , function(){
+    startGame();
+});
+
+       

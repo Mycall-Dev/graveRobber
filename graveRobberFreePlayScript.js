@@ -1,5 +1,15 @@
-rowCount = 18;
-columnCount = 18;
+
+columnCount = localStorage.getItem("columnCount");
+rowCount = localStorage.getItem("rowCount");
+if(rowCount == null){
+    rowCount = 18;
+    console.log("localstorage issue 1");
+}
+if(columnCount == null){
+    console.log("localstorage issue 2");
+    columnCount = 18;
+}
+
 amountOfTiles = rowCount * columnCount;
 var mineGridStats = [];
 divMineGrid = document.getElementById("divMineGrid");

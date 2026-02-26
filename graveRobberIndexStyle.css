@@ -31,11 +31,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.5vh solid rgb(91, 87, 87);
+    background-color:   rgb(95, 92, 92);
+    border-top: 0.2vh solid rgb(179, 167, 167);
+    border-left: 0.2vh solid rgb(179, 167, 167);
+    text-decoration: none;
+    color: white;
+}
+
+.menuButton:hover{
+    border-top: 0.2vh solid rgb(95, 92, 92);
+    border-left: 0.2vh solid rgb(95, 92, 92);
+    border-bottom: 0.2vh solid rgb(54, 51, 51);
+    border-right: 0.2vh solid rgb(54, 51, 51);
 }
 
 .buttonContainer{
-    border: 0.5vh solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42vh;
+    height: 9vh;
+    border: 0.4vh solid rgb(54, 52, 52);
+    background-color: rgb(109, 104, 104);
 }
 
 #itemContainer{
